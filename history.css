@@ -1,0 +1,17 @@
+.abstract-page {
+  max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 0px;
+}
+
+.abstract-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.abstract-page p {
+  color: #333;
+}

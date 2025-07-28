@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Traditional Health Care</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf2d2; /* Cream background for entire page */
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background-color: #fdf2d2; /* Cream background */
+      padding: 30px 10px 20px;   /* Reduced top & bottom spacing */
+      text-align: center;
+    }
+
+    .mantra {
+      font-size: 2.5em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff416c, #ff4b2b, #ffcc70, #47cacc);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 4s infinite linear;
+      margin: 0;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 0% }
+      100% { background-position: 300% }
+    }
+
+    /* Circle Image Section */
+    .circle-section {
+      background-color: #fdf2d2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .item {
+      width: 200px;
+    }
+
+.circle-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border: 4px solid #fff4c4;
+}
+
+    .title {
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #444;
+      margin-top: 5px;
+    }
+
+    .pink { color: #e91e63; }
+    .skyblue { color: #03a9f4; }
+    .yellow { color: #fbc02d; }
+
+    @media (max-width: 768px) {
+      .mantra {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌿 Header Section -->
+  <div class="hero-section">
+    <h1 class="mantra">Traditional Health Care Methods</h1>
+  </div>
+
+  <!-- 🟡 Circle Image Section -->
+<div class="container">
+
+  <!-- Yoga & Meditation -->
+  <a href="yogaandmeditation.html" style="text-decoration: none; color: inherit;">
+    <div class="item">
+      <img src="pics/w1.jpeg" alt="Yoga Meditation" class="circle-image pink-border" />
+      <div class="title pink">YOGA & MEDITATION</div>
+      <div class="description">Holistic balance for mind and body.</div>
+    </div>
+  </a>
+
+  <!-- Herbal Remedies -->
+  <a href="herbalremedies.html" style="text-decoration: none; color: inherit;">
+    <div class="item">
+      <img src="pics/w3.jpeg" alt="herbalremedies" class="circle-image yellow-border" />
+      <div class="title yellow">HOME REMEDIES</div>
+      <div class="description">Treatment for common health problems.</div>
+    </div>
+  </a>
+
+  <!-- Ayurveda -->
+  <a href="ayurveda.html" style="text-decoration: none; color: inherit;">
+    <div class="item">
+      <img src="pics/w2.jpeg" alt="Ayurveda" class="circle-image skyblue-border" />
+      <div class="title skyblue">AYURVEDA</div>
+      <div class="description">Ancient wisdom of herbal care.</div>
+    </div>
+  </a>
+
+</div>
+
+
+</body>
+</html>

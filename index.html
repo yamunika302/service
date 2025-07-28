@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parent Layout</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<!-- ✅ Fixed Navbar -->
+<div class="header">
+  <div class="header-container">
+    <div class="title"><h1>NATURAL HEALING ARTS</h1></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#" onclick="loadPage('home.html')">Home</a></li>
+        <li><a href="#" onclick="loadPage('introduction.html')">Introduction</a></li>
+        <li><a href="#" onclick="loadPage('history.html')">History</a></li>
+        <li><a href="#" onclick="loadPage('yogaandmeditation.html')">Yoga & Meditation</a></li>
+        <li><a href="#" onclick="loadPage('herbalremedies.html')">Home Remedies</a></li>
+        <li><a href="#" onclick="loadPage('ayurveda.html')">Ayurveda</a></li>
+        <li><a href="#" onclick="loadPage('contactus.html')">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+  <!-- Main Content (Loaded via JS) -->
+  <main id="content" class="main-content">
+    <h2>Welcome</h2>
+    <p>This is the homepage. Use the menu to load content.</p>
+  </main>
+
+  <script>
+    function loadPage(page) {
+      fetch(page)
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("content").innerHTML = data;
+          window.scrollTo(0, 0); // Optional: scroll to top on load
+        })
+        .catch(() => {
+          document.getElementById("content").innerHTML = "<p>Error loading page.</p>";
+        });
+    }
+
+    window.onload = () => loadPage("home.html");
+  </script>
+</body>
+</html>

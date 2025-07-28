@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    :root {
+      --primary-color: #829359;
+      --background-color: #fff;
+      --card-background: #ffffff;
+      --text-color: #444;
+      --subtext-color: #666;
+      --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      --hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0px 0px;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar ul {
+  padding: 10;
+  margin: 0.3;
+  display: flex;
+  gap: 0px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: color 0.3s;
+}
+  
+    header.section-header, header.header {
+      text-align: center;
+      padding: 10px;
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+        .poses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 20px;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .pose-card {
+      background-color: var(--card-background);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      width: 260px;
+      margin: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .pose-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--hover-shadow);
+    }
+
+    .pose-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .pose-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 12px 0 8px;
+    }
+
+    .pose-howto {
+      font-size: 14px;
+      color: var(--subtext-color);
+    }
+
+    .pose-benefits {
+      font-size: 13px;
+      color: #888;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .pose-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Optional: Section header styled like Ayurveda -->
+  <header>
+    <h1 style="background-color: #829359; color: white; padding: 10px; text-align: center;">YOGA & MEDITATION</h1>
+  </header>
+
+  <!-- ✅ Your Existing Content Starts Here -->
+  <section class="yoga-section">
+    <h2>🧘‍♂️ Yoga & Meditation...</h2>
+    <p><strong>Yoga</strong> is an ancient Indian practice that harmonizes the body, mind, and spirit. Derived from the Sanskrit word <em>“Yuj”</em> (to unite), it promotes physical flexibility, emotional stability, and spiritual awareness through structured movement, breath control, and ethical living.</p>
+
+
+  <p style="font-size: 17px; line-height: 1.8; color: #333;">
+    <strong>Meditation</strong>, a core aspect of yoga, is the practice of cultivating mental clarity and inner stillness. Through focused attention and mindful breathing, meditation helps reduce stress, enhance concentration, and encourage emotional resilience. Together, yoga and meditation offer a balanced and restorative approach to overall wellness.
+  </p>
+<ul>
+  <li><strong>Asanas (Postures):</strong> Improve strength, balance, and posture.</li>
+  <li><strong>Pranayama (Breathing):</strong> Enhances lung function and calms the mind.</li>
+  <li><strong>Dhyana (Meditation):</strong> Develops focus, peace, and emotional balance.</li>
+  <li><strong>Yamas & Niyamas:</strong> Ethical principles guiding behavior and mindset.</li>
+  <li><strong>Relaxation Techniques:</strong> Promote deep rest and stress relief.</li>
+</ul>
+
+  <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+  <h3>🕰️ Best Times to Practice</h3>
+
+
+  <ul style="list-style-type: disc; padding-left: 25px; font-size: 16px; color: #333;">
+    <li><strong>🌅 Early Morning (4:30 AM – 7:00 AM):</strong> Known as <em>Brahma Muhurta</em>, this is ideal for spiritual clarity, meditation, and gentle yoga.</li>
+    <li><strong>☀️ Late Morning (8:00 AM – 10:00 AM):</strong> Good for physical yoga postures with better body flexibility after waking up.</li>
+    <li><strong>🕒 Evening (4:30 PM – 6:30 PM):</strong> Suitable for stress-relieving practices and active asana sessions.</li>
+    <li><strong>🌙 Night (8:00 PM – 9:00 PM):</strong> Best for meditation and deep breathing to wind down before sleep. Avoid intense workouts at night.</li>
+  </ul>
+
+  <p style="font-size: 16px; line-height: 1.7; color: #333; margin-top: 20px;">
+    <strong>Tip:</strong> Practice on an empty stomach in a quiet, well-ventilated space. Consistency in timing enhances long-term benefits.
+  </p>
+</section>
+
+<header class="section-header">
+  <h2>A Brief Description About the Ways of Yoga</h2>
+  <p> Here are 20 common yoga poses with instructions and benefits that anyone can practice at home.</p>
+</header>
+
+<div class="poses-container">
+    <div class="pose-card">
+    <img class="pose-img" src="pics/i1.jpeg" alt="Mountain Pose">
+    <div class="pose-title">Mountain Pose (Tadasana)</div>
+    <div class="pose-howto">Stand with feet together, arms at sides. Stretch arms overhead or keep by side.</div>
+    <div class="pose-benefits">Improves posture, balance, and focus. Strengthens legs.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i2.jpeg" alt="Tree Pose">
+    <div class="pose-title">Tree Pose (Vrikshasana)</div>
+    <div class="pose-howto">Stand on one leg, place the other foot on inner thigh or calf. Hands in prayer.</div>
+    <div class="pose-benefits">Enhances balance, concentration, strengthens legs.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i3.jpg" alt="Cat-Cow Pose">
+    <div class="pose-title">Cat-Cow Pose</div>
+    <div class="pose-howto">On hands and knees, arch and round your spine with breath.</div>
+    <div class="pose-benefits">Increases spinal flexibility and warms up the body.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i4.jpeg" alt="Downward-Facing Dog">
+    <div class="pose-title">Downward-Facing Dog</div>
+    <div class="pose-howto">Form an inverted "V" with hands and feet on mat, hips lifted.</div>
+    <div class="pose-benefits">Stretches hamstrings, spine; strengthens arms and legs.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i5.jpeg" alt="Child’s Pose">
+    <div class="pose-title">Child’s Pose</div>
+    <div class="pose-howto">Sit on heels, fold forward, forehead on mat, arms stretched.</div>
+    <div class="pose-benefits">Calms the mind, relieves tension.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i6.jpeg" alt="Cobra Pose">
+    <div class="pose-title">Cobra Pose</div>
+    <div class="pose-howto">Lie on belly, hands under shoulders, lift chest using arms.</div>
+    <div class="pose-benefits">Strengthens spine, opens chest and lungs.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i7.jpeg" alt="Plank Pose">
+    <div class="pose-title">Plank Pose</div>
+    <div class="pose-howto">From hands and toes, form a straight line from head to heels.</div>
+    <div class="pose-benefits">Builds core strength and stamina.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i8.jpeg" alt="Chair Pose">
+    <div class="pose-title">Chair Pose</div>
+    <div class="pose-howto">Stand, bend knees like sitting, arms overhead.</div>
+    <div class="pose-benefits">Strengthens thighs, ankles, spine.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i9 (2).jpeg" alt="Warrior I">
+    <div class="pose-title">Warrior I</div>
+    <div class="pose-howto">Step forward into lunge, arms reaching up, hips forward.</div>
+    <div class="pose-benefits">Builds focus, balance, strength.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i10.jpeg" alt="Warrior II">
+    <div class="pose-title">Warrior II</div>
+    <div class="pose-howto">Open arms/hips, front knee bent, gaze over front hand.</div>
+    <div class="pose-benefits">Increases stamina and balance.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i11.jpeg" alt="Boat Pose">
+    <div class="pose-title">Boat Pose</div>
+    <div class="pose-howto">Sit, lift legs/arms parallel to floor, balance on sit bones.</div>
+    <div class="pose-benefits">Strengthens core and hip flexors.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i12.jpg" alt="Bridge Pose">
+    <div class="pose-title">Bridge Pose</div>
+    <div class="pose-howto">Lie down, bend knees, lift hips, press feet/arms down.</div>
+    <div class="pose-benefits">Opens chest, strengthens back and legs.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i13.jpeg" alt="Butterfly Pose">
+    <div class="pose-title">Butterfly Pose</div>
+    <div class="pose-howto">Sit, soles of feet together, gently flap knees or hold feet.</div>
+    <div class="pose-benefits">Opens hips, improves flexibility.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i14.jpeg" alt="Camel Pose">
+    <div class="pose-title">Camel Pose</div>
+    <div class="pose-howto">Kneel, arch back, reach hands to heels, lift chest and hips.</div>
+    <div class="pose-benefits">Stretches front body, strengthens back.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i15.jpeg" alt="Happy Baby Pose">
+    <div class="pose-title">Happy Baby Pose</div>
+    <div class="pose-howto">Lie on back, grab feet, draw knees to armpits.</div>
+    <div class="pose-benefits">Relieves lower back and hip tension.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i16.jpeg" alt="Frog Pose">
+    <div class="pose-title">Frog Pose</div>
+    <div class="pose-howto">Squat wide, knees out, hands on ground.</div>
+    <div class="pose-benefits">Opens hips, stretches inner thighs.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i17.jpg" alt="Locust Pose">
+    <div class="pose-title">Locust Pose</div>
+    <div class="pose-howto">Lie on stomach, lift legs, chest, and arms off floor.</div>
+    <div class="pose-benefits">Strengthens back, improves posture.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i18.jpg" alt="Eagle Pose">
+    <div class="pose-title">Eagle Pose</div>
+    <div class="pose-howto">Wrap one leg over other, arms cross, balance and hold.</div>
+    <div class="pose-benefits">Improves focus, balance, stretches shoulders.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i19.jpg" alt="Triangle Pose">
+    <div class="pose-title">Triangle Pose</div>
+    <div class="pose-howto">Stand wide, stretch one arm down, one up, gaze up.</div>
+    <div class="pose-benefits">Stretches legs and torso, opens chest.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/i20.jpg" alt="Corpse Pose">
+    <div class="pose-title">Corpse Pose (Savasana)</div>
+    <div class="pose-howto">Lie flat on back, arms relaxed, eyes closed.</div>
+    <div class="pose-benefits">Promotes total relaxation and stress relief.</div>
+  </div>
+</div>
+
+<header class="section-header">
+  <h2>5 Meditation Poses</h2>
+  <p>Simple and effective poses for calmness and focus</p>
+</header>
+
+<div class="poses-container">
+  <div class="pose-card">
+    <img class="pose-img" src="pics/a1.jpg" alt="Easy Pose">
+    <div class="pose-title">1. Easy Pose (Sukhasana)</div>
+    <div class="pose-howto">Comfortable cross-legged sitting posture for mindfulness and calm breathing.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/a2.jpg" alt="Lotus Pose">
+    <div class="pose-title">2. Lotus Pose (Padmasana)</div>
+    <div class="pose-howto">Advanced cross-legged posture promoting deep meditation and stability.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/a3.jpg" alt="Chair Meditation">
+    <div class="pose-title">3. Seated on a Chair</div>
+    <div class="pose-howto">Ideal for those with knee problems; feet grounded and spine upright.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/a4.jpg" alt="Thunderbolt Pose">
+    <div class="pose-title">4. Thunderbolt Pose (Vajrasana)</div>
+    <div class="pose-howto">Kneeling pose that aids digestion and brings stillness to the mind.</div>
+  </div>
+  <div class="pose-card">
+    <img class="pose-img" src="pics/a5.jpg" alt="Corpse Pose">
+    <div class="pose-title">5. Corpse Pose (Savasana)</div>
+    <div class="pose-howto">Relaxing supine position for full-body awareness and deep rest.</div>
+  </div>
+</div>
+
+<div class="content-box">
+  <h2 style="color: #4e792f; text-align: center;">Useful Yoga & Meditation Videos</h2>
+  <div class="link-section" style="text-align: center; color: #2e5c3f; font-weight: bold;">
+    <a href="https://youtu.be/qS9Kv13uzLs?si=qp8TDC6ktauFCNHV" target="_blank">▶️ YouTube: Yoga for Beginners – Session 1</a><br>
+    <a href="https://youtu.be/jO-jIFgGJ4k?feature=shared" target="_blank">▶️ YouTube: Yoga Breathing Techniques</a><br>
+    <a href="https://youtu.be/LwTVj0Cf8a8?si=8Ydiwjxf7BYdLomP" target="_blank">▶️ YouTube: Guided Meditation Practice</a><br>
+    <a href="https://youtube.com/@ventunoyoga?si=yhpBuOz9GIh6ZH31" target="_blank">▶️ Ventuno Yoga – YouTube Channel</a><br>
+    <a href="https://youtube.com/@yogawithadriene?si=sNfwDsUdl2RUZQD7" target="_blank">▶️ Yoga With Adriene – YouTube Channel</a>
+  </div>
+
+  <p style="margin-top: 30px; font-size: 16px; color: #333; text-align: center; max-width: 750px; margin-left: auto; margin-right: auto;">
+    మీరు యోగా మరియు ధ్యానం గురించి మరింత తెలుసుకోవాలంటే పై వీడియోలను చూడండి. యోగా సాధన, శ్వాస నియంత్రణ, మరియు ధ్యానం ద్వారా మానసిక మరియు శారీరక ఆరోగ్యాన్ని మెరుగుపరుచుకోవచ్చు. నిపుణుల మార్గదర్శకత్వంతో మీరు రోజువారీ సాధన ప్రారంభించవచ్చు.
+  </p>
+</div>
+
+  </section>
+
+  <!-- Your footer -->
+  <footer>
+    &copy; 2025 Wellness Foundation | Designed for holistic health awareness
+  </footer>
+
+</body>
+</html>

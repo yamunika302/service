@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Fixed Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #7a8e4c;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  margin: 0;
+  padding: 10px 0 5px;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #6e8242;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #fffec8;
+}
+
+/* Content with top padding to avoid overlap */
+.main-content {
+  padding: 120px 20px 30px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: justify;
+}
+
+html {
+  overflow-y: scroll; /* Always reserve space for vertical scrollbar */
+}
+
+body {
+  scrollbar-gutter: stable;
+}
+
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #899957;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-container .intro {
+  text-align: center;
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background-color: #899957;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #245336;
+}
+
+.contact-details {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-details strong {
+  color: #2e5c3f;
+}
+
+
+.content-box {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.content-box h2 {
+  color: #5E8C31;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.content-box ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.content-box a {
+  color: #5E8C31;
+  text-decoration: none;
+}
+
+.content-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* === Table Styling for Home Remedies === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #dce3d1;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+

@@ -1,0 +1,85 @@
+.conclusion-page {
+  max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 20px;
+}
+
+.conclusion-page h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.conclusion-page h3 {
+  margin-top: 30px;
+  color: #222;
+}
+
+.navbar {
+  background-color: #899957;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0; /* reduced size */
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  font-size: 18px; /* slightly smaller text */
+  font-weight: bold;
+}
+
+.navbar-links a {
+  color: white;
+  margin-left: 15px; /* tighter spacing */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px; /* smaller link text */
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #dce3d1;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.content-box {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: hsl(40, 5%, 87%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}

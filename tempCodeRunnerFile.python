@@ -1,0 +1,46 @@
+import math
+
+def calculator():
+    """
+    A fully functional virtual calculator supporting:
+    - Basic arithmetic: +, -, *, /
+    - Exponentiation: **
+    - Modulo: %
+    - Parentheses
+    - Math functions: sin, cos, tan, sqrt, log, exp, factorial, etc.
+    - Constants: pi, e
+    Type 'quit' to exit.
+    """
+    print("Welcome to the Advanced Virtual Calculator!")
+    print("You can use +, -, *, /, **, %, parentheses, and math functions like sin(), cos(), sqrt(), etc.")
+    print("Type 'quit' to exit.")
+
+    # Allowed names from math module plus built-in functions/constants
+    allowed_names = {k: getattr(math, k) for k in dir(math) if not k.startswith("__")}
+    allowed_names.update({
+        'abs': abs,
+        'round': round,
+        'pi': math.pi,
+        'e': math.e
+    })
+
+    while True:
+        expr = input("Enter calculation: ").strip()
+        if expr.lower() == 'quit':
+            print("Goodbye!")
+            break
+
+        try:
+            # Only allow safe characters (digits, letters, operators, parentheses, dot, comma)
+            allowed_chars = "0123456789+-*/%.() ,eE"
+            if any(c not in allowed_chars and not c.isalpha() for c in expr):
+                raise ValueError("Invalid characters in expression.")
+
+            # Evaluate expression with restricted globals and locals
+            result = eval(expr, {"__builtins__": None}, allowed_names)
+            print("Result:", result)
+        except Exception as e:
+            print("Error:", e)
+
+if __name__ == "__main__":
+    calculator()

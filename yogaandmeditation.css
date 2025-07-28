@@ -1,0 +1,44 @@
+.yoga-section {
+  background-color: var(--card-background);
+  padding: 40px 25px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  max-width: 950px;
+}
+
+.yoga-section h2 {
+  color: #17753a;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.yoga-section h3 {
+  color: #2e5c3f;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.yoga-section p,
+.yoga-section li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.yoga-section ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.yoga-section hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+
